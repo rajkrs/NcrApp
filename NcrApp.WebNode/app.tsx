@@ -1,11 +1,20 @@
 ﻿'use strict'
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import Button from '@material-ui/core/Button';
+
+
+function App() {
+    return (
+        <div>
+            <Button variant="contained" color="primary">
+                Hello Raj
+            </Button>
+        </div>
+    );
+}
 
 ReactDOM.render(
-    <div  class="alert alert-success" >
-        <h1>Welcome to ReactDom</h1>
-        <p>You can explore all dom element here.</p>
-    </div>
-    , document.getElementById('root') as HTMLElement
+    <App />
+    , document.querySelector('#root')
 )

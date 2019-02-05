@@ -2,7 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var ReactDOM = require("react-dom");
-ReactDOM.render(React.createElement("div", { class: "alert alert-success" },
-    React.createElement("h1", null, "Welcome to ReactDom"),
-    React.createElement("p", null, "You can explore all dom element here.")), document.getElementById('root'));
+var Button_1 = require("@material-ui/core/Button");
+function App() {
+    return (React.createElement("div", null,
+        React.createElement(Button_1.default, { variant: "contained", color: "primary" }, "Hello Raj")));
+}
+ReactDOM.render(React.createElement(App, null), document.querySelector('#root'));
 //# sourceMappingURL=app.js.map

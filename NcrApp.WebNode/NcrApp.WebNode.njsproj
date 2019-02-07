@@ -50,6 +50,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="libman.json" />
+    <Content Include="src\app\Error\Components\404.tsx" />
     <Content Include="src\assets\css\main.css" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
@@ -57,13 +58,7 @@
     <TypeScriptCompile Include="src\app\global_constants.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\app\login\component\forgot_password.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="src\app\login\component\login.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="src\app\login\component\reset_password.ts">
+    <TypeScriptCompile Include="src\app\login\component\Login.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\login\login_constant.ts">
@@ -74,15 +69,18 @@
     <Folder Include="Config\" />
     <Folder Include="src\" />
     <Folder Include="src\app\" />
+    <Folder Include="src\app\Error\Components\" />
     <Folder Include="src\app\login\" />
     <Folder Include="src\app\login\action\" />
     <Folder Include="src\app\login\component\" />
     <Folder Include="src\app\login\reducer\" />
+    <Folder Include="src\app\Error\" />
     <Folder Include="src\assets\" />
     <Folder Include="src\assets\css\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\webpack-dev-config.js" />
+    <Compile Include="postcss.config.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
